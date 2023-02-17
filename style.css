@@ -1,0 +1,1181 @@
+*
+{
+    list-style: none; /*concernant uniquement les ul ou listes */
+}
+.image-background
+{
+    position: absolute;
+    width: 100%;
+    opacity: 0.2;
+    z-index: -2;
+}
+body
+{
+    margin: 0px;
+    width: 100%;
+   
+}
+ /*concernant uniquement les  */
+ .body-aniamtion
+ {
+    position: absolute;
+    width: 98.888vw;
+    height: 450vh;
+    overflow: hidden;
+    display: block;
+ }
+ .aniamtion-body
+ {
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: rgb(65, 255, 7);
+    animation: animate 30s linear infinite;
+    bottom: 300vh;
+ }
+ .aniamtion-body:nth-child(1)
+ {
+    left: 60%;
+    width: 86px;
+    height: 86px;
+    animation-delay: 0s;
+ }
+ .aniamtion-body:nth-child(2)
+ {
+    left: 12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 0s;
+    animation-duration: 10s;
+ }
+ .aniamtion-body:nth-child(3)
+ {
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
+ }
+ .aniamtion-body:nth-child(4)
+ {
+    left: 40%; 
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+ }
+ .aniamtion-body:nth-child(5)
+ {
+    left: 80%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+ }
+ @keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-900px) rotate(360deg);
+        opacity: 0;
+    }
+ }
+/*concernant uniquement laniamtion du span-bacground..........................*/
+.bacground-aniamtion
+{
+    position: absolute;
+    width: 98.888vw;
+    height: 450vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+.span-bacground
+{
+    position: relative;
+    width: calc(3.25vw - 2px);
+    height:calc(3.25vw - 2px);
+    display: block;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+.span-bacground:hover
+{
+    background: #03dafb;
+    transition: 0s;
+    box-shadow: 0 0 0 0 black;
+    animation: palse 1.3s infinite;
+}
+@keyframes palse {
+    to{
+        box-shadow: 0 0 0 11px rgba(0, 0, 0, 0.01);
+    }
+    
+}
+@media (max-width:900px)
+{
+    .span-bacground
+    {
+        position: relative;
+        width: calc(10vw - 2px);
+        height:calc(10vw - 2px);
+        display: block;
+    
+    }
+}
+/*concernant uniquement laniamtion du span-bacground..........................*/
+header
+{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(68, 68, 68);
+    /*elelments servant a fixer le header */
+    top: 0.1px;
+    z-index: 25;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 512px;
+    height: 50px;
+}
+.corp
+{
+    margin: 10%;
+}
+/*elemets du header*/
+.icon
+{
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif; 
+}
+.les3logos
+{
+    width: 40px;
+    height: 40px;
+}
+.logo-desingner
+{
+    z-index: 25;
+}
+.lesdeux
+{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    z-index: 25;
+}
+.homepage
+{
+    color: rgb(166, 166, 166);
+    font-size: 14px;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+    text-decoration: none;
+}
+.homepage:hover
+{
+    color:rgb(0, 251, 255); 
+    cursor: pointer;
+}
+.aboute
+{
+    color: rgb(166, 166, 166);
+    font-size: 14px;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+    text-decoration: none;
+}
+.aboute:hover
+{
+    color:rgb(0, 251, 255); 
+    cursor: pointer;
+}
+.DESIGNER
+{
+  color: rgb(166, 166, 166);
+  font-size: 10px;
+  font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+  transition: 0.2s;
+  z-index: 30;
+}
+.DESIGNER:hover
+{
+  color: rgb(0, 251, 255);
+  font-size: 12px;
+  font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+  cursor: pointer;
+  z-index: 30;
+}
+/*elemet de lanimation de ion  */
+.bome
+{
+  text-shadow: 8px 8px 13px  black;
+  animation: pulse 1.3s infinite;
+  font-size: 4em;
+  font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif; 
+}
+@keyframes pulse 
+{
+  to{
+    text-shadow: 0 0 0 18px rgba(0, 0, 0, 0.092);
+    }
+}
+/*elemets du header*/
+.neuromorphism1
+{
+
+    padding: 4%;
+    display: flex;
+    height: 450px;
+    justify-content: space-around;
+    align-items: baseline;
+}
+ul 
+{
+    display: flex;
+    justify-content: space-between;
+}
+h2
+{
+    font-size: 3em;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+}
+h3
+{
+  text-align: center;
+  color: black;
+  font-size: 7em;
+  font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+  z-index: 24;
+}
+h4
+{
+  text-align: center;
+  color: black;
+  font-size: 5em;
+  font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+}
+/* elements de lien rapide*/
+.lien-rapide
+{
+    z-index: 24;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 25;
+    align-items: center;
+    width:80%;
+    bottom: 5%;
+}
+.alignement
+{
+    border: #03dafb solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 525px;
+    height: 80px;
+}
+.contrastes
+{
+    z-index: 24;
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+    align-items: center;
+    width: 500px;
+    height: 62px;
+    background: #484848;
+    border-radius: 10px;
+}
+.lestrois-boutton
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 330px;
+    height: 50px;
+    background: #19b3fb;
+    border-radius: 10px;
+}
+.lestrois-boutton a
+{ 
+   text-decoration: none;
+   color: white;
+}
+.lien-rapide .contrastes .haut-page img
+{
+    width: 25px;
+    height: 25px;
+    transform:rotate(90deg);
+}
+.haut-page
+{
+    background: #36b9f7;
+    height: 38px;
+    width: 50px;
+    border:white solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.start-lien
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 25;
+    height: 38px;
+    width: 100px;
+    font-size: 0.3em;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+    border: #c1f9ff solid 1px;
+    border-radius: 10px;
+}
+/*elements du corps*/
+.imagejojo
+{
+    width: 170px;
+    height: 200px;
+    border-radius: 5%;
+    box-shadow: 21px 16px 12px rgb(223, 229, 227);
+    transition: 0.1s;
+    position: relative;
+    z-index: 24;
+    
+}
+.imagejojo:hover
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 21px 16px 12px rgb(223, 229, 227);
+    
+}
+.bouton
+{
+    display: grid;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    z-index: 24;
+}
+.boutontext
+{
+    font-size: 27px;
+    color: rgb(145, 145, 145); 
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+}
+.bouton-start
+{
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif; ;
+    border: solid white ;
+    cursor: pointer;
+    background-color: #19b3fb;
+    border-radius: 10px;
+    box-shadow:  0px 0px 0px #19b3fb;
+    animation: pulse 1.3s infinite;
+}
+@keyframes pulse {
+    to{box-shadow: 0px 0px 24px rgba(62, 52, 255, 0.675);}
+}
+.methodologie
+{
+  display: flex;
+  justify-content: right;
+  align-items:center ;
+  gap: 120px;
+  height: 500px;
+}
+.block1
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.theme2
+{
+  color: rgb(107, 107, 107);
+}
+/*element concernant le calandrier animer.............................................. */
+.calandrierelement
+{
+    width: 1220px;
+    height: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.calandrier
+{
+    width: 500px;
+    border-radius: 10px;
+    display: grid;
+    height: 600px;
+    justify-content: center;
+}
+.calandar
+{
+    border-bottom: #717171 solid 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width: 400px;
+    border-radius: 15px 15px  0px 0px;
+    background:  linear-gradient(145deg, #878787, #232222 );
+    gap: 18px;
+    border-bottom-right-radius: 11px 11px 65px #121111
+                                -11px -11px 65px  #484848; ;
+}
+.november
+{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 20px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+.logotpp
+{
+    width: 32px;
+    height: 32px;
+}
+.logotpp2
+{
+    width: 32px;
+    height: 32px;
+    transform: rotatey(170deg);
+}
+.nov
+{
+    color: #36b9f7;
+    display: inline;
+    font-size: 20px;
+    text-align: center;
+}
+td
+{
+    width: 40px;
+    height: 40px;
+    color: #979797;
+}
+.tddays
+{
+    color: #36b9f7;
+}
+.tddays1
+{
+     color: #6c6b6b;
+}
+.boutontd
+{
+    background-color: #36b9f7;
+    border-radius: 70px;
+    width: 40px;
+    height: 40px;
+    color: #f1f1f1;
+}
+table
+{
+    height: 400px;
+    width: 400px;
+    background-color: #4d4d4d;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 10px 10px 45px #4d4d4d;
+    border-collapse: collapse;
+}
+
+.boutoncalan
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #878787, #232222 );
+    border: none;
+    box-shadow:  11px 11px 65px #121111
+               -11px -11px 65px  #676767;
+}
+/*fin des elements concernant le calandrier animer.............................................. */
+.neuromorphism1
+{
+    border: rgb(228, 228, 228) 2px solid;
+    border-radius: 1%;
+    box-shadow: 14px 14px 29px rgb(191, 191, 191);
+    width: 550px;
+}
+.listcompetance
+{
+    font-size: 2em;
+    font-weight: 400;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif; 
+}
+.paraut
+{
+  color: rgb(107, 107, 107);
+}
+p
+{
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+}
+.exercice
+{
+    display: flex;
+    justify-content: space-between;
+}
+/*animation du text qui defile */
+.textanimation
+{
+    display: flex;
+    overflow: hidden;
+    width: 1220px;
+    position: absolute;
+    transform: translatey(-50%);
+    background-color: rgb(30, 29, 29);
+    z-index: 20;
+}
+.txt
+{
+    font-size: 2em;
+    white-space: nowrap;
+    animation: scrolltxt 10s linear infinite;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+    color: white;
+}
+
+@keyframes scrolltxt
+{
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(-100%, 0);
+    }
+}
+/*elements du footer*/
+
+
+/*elements de l'aniamtion de la (METHODOLOGIE)*/
+span
+{
+  font-size: 3em;
+  color: #232323;
+}
+.slidp
+{
+  font-size: 2em;
+}
+/*animation du text (methodologie)*/
+.slides
+{
+    height: calc(450px * 3);
+    animation: glisse 20s infinite;
+}
+.slider
+{
+    height: 215px;
+    overflow: hidden;
+    margin: 150px auto;
+}
+@keyframes glisse {
+   0%{
+    transform: translateY(0);
+   }
+   15%{
+    transform: translateY(0);
+   }
+   25%{
+    transform: translateY(-215px);
+   }
+   40%{
+    transform: translateY(-215px);
+   }
+   50%{
+    transform: translateY(-430px);
+   }
+   70%{
+    transform: translateY(-430px);
+   }
+   75%{
+    transform: translateY(-631px);
+   }
+   90%{
+    transform: translateY(-631px);
+   }
+   100%{
+    transform: translateY(0);
+   }
+}
+/*animation des  saisis */
+.saisi
+{
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 2px;
+}
+h1
+{
+color: black;
+font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+text-align: left;
+font-size: 3em;
+white-space: nowrap;
+overflow: hidden;
+width: 325px;
+animation: type 2.2s steps(40,end) forwards;
+}
+@keyframes type {
+    0%{
+        width: 0;
+    }
+    1%, 99%{
+        border-right: 1px solid black;
+    }
+    100%{
+        border-right: none;
+    }
+}
+/* fin de lanimation des saisis */
+/*section elements */
+.domaine
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+.sous-domaine
+{
+    border-radius: 10px;
+    background-color: #232222 ;
+    color: #03dafb;
+    box-shadow:  -10px 30px 30px rgba(68, 68, 68, 0.299);;
+    position: relative;
+    z-index: 24;
+}
+.text-domaine
+{
+    z-index: 24;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    
+}
+.domaine-p:nth-child(1)
+{
+    color: #03dafb;
+    font-size: 1.6em;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif; 
+    font-weight: 700;
+}
+.domaine-p:nth-child(2)
+{
+    color:#5d5b5b;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif; 
+     font-weight: 700; font-weight: 400;
+}
+.siteimage
+{
+    border-radius: 10px 10px 0px 0px;
+    width: 350px;
+    height: 250px;
+}
+.lesliens
+{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+}
+.Pliens
+{
+    text-align: center;
+}
+
+/*elements du footer*/
+footer
+{
+    background-color: black;
+    display: grid; 
+    justify-content:center;
+    height: auto;
+}
+.foot
+{
+    width: auto;
+}
+h5
+{
+    font-size: 2em;
+    color:#5d5b5b;
+    height: 20px;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+}
+.elemotivation
+{
+    color:rgb(145, 145, 145) ;
+}
+.orderul
+{
+    display: grid;
+    color: #19b3fb;
+    font-size: 15px;
+    z-index: 25;
+}
+.commencerP
+{
+    width: 130px;
+    height: 35px;
+    font-size: 20px;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif; 
+    border: solid white ;
+    cursor: pointer;
+    background-color: #19b3fb;
+    border-radius: 10px;
+    box-shadow:  0px 0px 0px #19b3fb;
+    animation: petit 1.3s infinite;
+}
+@keyframes petit {
+    to{box-shadow: 0px 0px 24px rgba(62, 52, 255, 0.675);}
+}
+/*element des logos facebook et gnail dans footer*/
+.logofacebook 
+{
+    width: 32px;
+    height: 32px;
+}
+.logogmail
+{
+    width: 32px;
+    height: 32px;
+}
+.logocontact
+{
+    width: 150px;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 25;
+}
+.copyrigth
+{
+    font-size: 15px;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif; ;
+    cursor: pointer;
+    color:rgb(145, 145, 145) ;
+}
+.motiv 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: #5d5b5b solid 2px;
+}
+.dernierepartie
+{
+    display: flex;
+    justify-content: space-between;
+}
+.connaissance
+{
+    color: #8c8c8c;
+    font-size: 35px;
+    border-top: #5d5b5b solid 3px;
+    width: 300px;
+}
+.piedfoot
+{
+    margin: 1%;
+    display: grid;
+    gap: 60px;
+    width: 1220px;
+}
+/*elements concernat uniquent la deuxieme page*/
+.les1logos
+{
+    width: 100px;
+    height: 100px;
+}
+.les2logos
+{
+    width: 100px;
+    height: 100px;
+    background-color: #19b3fb;
+    border-radius: 50%;
+}
+.toxt
+{
+    font-size: 20px;
+}
+/* alignemet des de la parti des element corps, concernant uniquent la deuxieme page*/
+.elementform
+{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+.foota
+{
+    background-color: #9f9f9f;
+    border-radius: 20px 0px  0px 20px;
+    display: grid;
+    align-content: space-between;
+    gap: 55px;
+    width: 700px;
+    height: 650px;
+    padding: 30px;
+}
+.logombomez
+{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 280px;
+
+}
+.toxt
+{
+    height: 50px;
+    text-align: center;
+}
+.formulaire
+{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 700px;
+    height: 650px;
+    padding: 30px;
+    background-color: #ebfcfa;
+    border-radius: 0px 20px  20px 0px;
+}
+.formu
+{
+    display: grid;
+    align-content: center;
+    justify-items: end;
+    
+}
+form
+{
+    gap: 4px;
+}
+input
+{
+    width: 100%;
+    border: none;
+    background-color: #e2e0e0;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+    display: block;
+}
+label
+{
+    font-size: 20px;
+    height: 20px;
+    padding: 3px;
+}
+.impoutt
+{
+    height: 200px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.soummetre
+{
+    height: 50px;
+    width: 250px;
+    background-color: #232323;
+    color: #19b3fb;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+.impout
+{
+    display: grid;
+    width: 450px;
+    height: 150px;
+    
+}
+::placeholder
+{
+    font-size: 20px;
+    padding: 5px;
+}
+/*element du  contenairesection*/
+.contenairesect
+{
+    position: relative;
+    height: 700px;
+    width: 700px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.contenairesect::before
+{
+    content: '';
+    position: absolute;
+    height: 225px;
+    width: 225px;
+    background: linear-gradient(rgb(0, 170, 255) , rgb(0, 255, 30));
+    border-radius: 50%;
+    transform: translate(-230px,-120px);
+}
+.contenairesect::after
+{
+    content: '';
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(rgb(0, 255, 225) , rgb(48, 42, 48));
+    border-radius: 50%;
+    transform: translate(250px,150px);
+}
+.box
+{
+    min-height: 500px;
+    min-width: 350px;
+    background: rgb(255, 255, 255, 0.1);
+    border: solid 1px rgba(196, 194, 194, 0.842);
+    z-index: 20;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    padding: 20px;
+}
+.box h6 
+{
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+}
+.imagebox
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    transition: 0.7s;
+}
+.box .listes
+{
+   position: relative;
+   display: flex;
+   justify-content: space-around;
+   padding: 10px 0;
+   color: #1964fb;
+   background: rgb(144, 144, 144,0.1);
+   padding: 10px 0;
+   margin: 15px 0;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+.box .listes:hover
+{
+    background-color: #adacac;
+    box-shadow: -15px 30px 50px rgba(68, 68, 68, 0.799);
+    transform: scale(1.15);
+    z-index: 1000;
+}
+.box .listes .contenus
+{
+    width: 100px;
+    height: 100px;
+}
+.spanbox
+{
+    font-size: 17px;
+}
+.box .listes .imagbox
+{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box .listes .imagbox
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.imagebox:hover
+{
+    border-radius: 10%;
+}
+/*element media scren*/
+@media (max-width:1024px) 
+{
+    body
+    {
+        width: auto;
+        height: auto;
+    }
+    header
+    {
+        width: 100%;
+        top: 0.1px;
+        z-index: 25;
+    }
+    nav
+    {
+        width: auto;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .block1
+    {
+        width: auto;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+    h1
+    {
+        font-size: 2em;
+    }
+    .neuromorphism1
+    {
+    padding: 4%;
+    display: grid;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    }
+    .bouton
+    {
+        display: none;
+    }
+    ul 
+    {
+    display: flex;
+    justify-content: space-between;
+   }
+   h2
+   {
+    font-size: 1.7em;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+   }
+   h3
+   {
+   text-align: center;
+   color: black;
+   font-size: 3em;
+   font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+   z-index: 24;
+   }
+    h4
+   {
+   text-align: center;
+   color: black;
+   font-size: 3em;
+   font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+   }
+   .methodologie
+   {
+   display: flex;
+   justify-content: right;
+   align-items:center;
+   gap: 140px;
+   height: 300px;
+   }
+   .slidp
+   {
+     font-size: 1em;
+     height: auto;
+   }
+  .slides
+  {
+    height: calc(225px * 1);
+    animation: glisse 20s infinite;
+   }
+   .slider
+   {
+    height: 180px;
+    overflow: hidden;
+    margin: 75px auto;
+   }
+   .textanimation
+   {
+    display: none;
+   }
+   .calandrierelement
+   {
+    width: auto;
+    height: auto;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .domaine
+   {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+   }
+   .sous-domaine
+   {
+    border-radius: 10px;
+    background-color: #232222 ;
+    color: #03dafb;
+    box-shadow:  -10px 30px 30px rgba(68, 68, 68, 0.299);;
+    position: relative;
+    z-index: 24;
+   }
+   .text-domaine:nth-last-child(1)
+   {
+    z-index: 24;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   }
+   .orderul , h5 , li 
+   {
+    display: none;
+   }
+   .piedfoot
+   {
+    width: 100%;
+    height: auto;
+    margin: 1%;
+   }
+}

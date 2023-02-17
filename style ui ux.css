@@ -1,0 +1,346 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 350px;
+    min-height: 100vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.section1
+{
+    position: absolute;
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1 .sign-in
+{
+    position: absolute;
+    width: 400px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+.section1 .sign-in .content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.section1 .sign-in .content h1
+{
+    font-size: 2em;
+    color: #0f0;
+    text-transform: uppercase;
+}
+.section1 .content .form
+{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+}
+.section1 .sign-in .content .form .inputbx
+{
+   width: 100%;
+   position: relative;
+}
+
+.section1 .sign-in .content .form .inputbx input
+{
+   width: 100%;
+   position: relative;
+   background: #333;
+   border: none;
+   outline: none;
+   padding: 25px 10px 7.5px;
+   border-radius: 4px;
+   color: #fff;
+   font-weight: 500;
+   font-size: 1em;
+}
+.section1 .sign-in .content .form .inputbx i
+{
+   position: absolute;
+   left: 0;
+   padding: 15px;
+   font-style: normal;
+   color: #aaa;
+   transition: 0.5s;
+   pointer-events: none;
+}
+.section1 .sign-in .content .form .inputbx input:focus ~ i,
+.section1 .sign-in .content .form .inputbx input:valid ~ i
+{
+   transform: translateY(-7.5px);
+   font-size: 0.8em;
+   color: #fff;
+}
+.section1 .content .form .link 
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.section1 .content .form .link a
+{
+    color: #fff;
+    text-decoration: none;
+}
+.section1 .sign-in .content .form .link a:nth-child(2)
+{
+    color: #0f0;
+    font-weight: 600;
+}
+.section1 .content .form .inputbx input[type="submit"]
+{
+    padding: 10px;
+    background: #0f0;
+    color: #111;
+    font-weight: 600;
+    font-size: 1.25em;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+}
+/*section loaeder************************debut*********************/
+.loader
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    min-height: 100vh;
+    background: #ffffff;
+    animation: changeBg 5s linear infinite;
+}
+@keyframes changeBg 
+{
+    to{
+        filter: hue-rotate(360deg);
+    }    
+}
+.loading
+{
+    width: 150px; 
+    height: 150px;
+    background: linear-gradient(to top,#001d30 40%,#00ff55);
+    border-radius: 50%;
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate 
+{
+    to{
+        transform: rotate(360deg);
+    }
+}
+.loading::before
+{
+    content: '';
+    position: absolute;
+    background:white;
+    inset: 3px 10px 0 0;
+    border-radius: 50%;
+}
+.loading::after
+{
+    content: '';
+    position: absolute;
+    background: #51eeee;
+    top: 140px;
+    right: 55px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #51eeee,
+    0 0 25px #51eeee, 0 0 50px #51eeee;
+    border-radius: 50%;
+}
+/*section loaeder***********************************fin******************/
+/*section oder-loaeder************debut**********************************/
+.oder-loader
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+    min-height: 100vh;
+    gap: 50px;
+    animation: animateDr 10s linear infinite;
+}
+@keyframes animateDr {
+   0%{
+    filter: hue-rotate(0deg);
+   } 
+     100%{
+    filter: hue-rotate(360deg);
+   } 
+}
+.oder-loading 
+{
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(18deg * var(--i)));
+}
+span::before
+{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #00ff0a;
+    box-shadow: 0 0 10px #00ff0a,
+                0  0 20px #00ff0a,
+                0 0 40px #00ff0a,
+                0  0  60px #00ff0a,
+                0 0  80px #00ff0a,
+                0 0  100px #00ff0a;
+    animation: anim 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes anim {
+    0%{
+        transform: scale(1);
+    }
+     80%,100%{
+        transform: scale(0);
+    }
+}
+p
+{
+    font-size: 2em;
+}
+
+/*element de lien rapide*/
+.lien-rapide
+{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 25;
+    align-items: center;
+    width:90%;
+    bottom: 2%;
+}
+.alignement
+{
+    border: #03dafb solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 525px;
+    height: 80px;
+}
+.contrastes
+{
+    z-index: 24;
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+    align-items: center;
+    width: 500px;
+    height: 62px;
+    background: #484848;
+    border-radius: 10px;
+}
+.lestrois-boutton
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 330px;
+    height: 50px;
+    cursor: pointer;
+    background: #19b3fb;
+    border-radius: 10px;
+    color: white;
+}
+.lien-rapide .contrastes .haut-page img
+{
+    width: 25px;
+    height: 25px;
+    transform:rotate(90deg);
+}
+.haut-page
+{
+    background: #36b9f7;
+    height: 38px;
+    width: 50px;
+    border:white solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.start-lien
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 25;
+    color: black;
+    text-decoration: none;
+    height: 38px;
+    width: 100px;
+    font-size: 0.7em;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+    border: #c1f9ff solid 1px;
+    border-radius: 10px;
+}
+/* fin des elements de lien rapide*/
+@media  (max-width:1124px)
+{
+    .section1
+    {
+        width: 75vh;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1 .sign-in
+    {
+        width: 300px;
+    }
+    .section1 .sign-in .content .form .inputbx
+    {
+     width: 70%;
+    }
+    .section1 .sign-in .content .form .inputbx input
+   {
+     width: 70%t;
+   }
+}

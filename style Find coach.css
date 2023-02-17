@@ -1,0 +1,416 @@
+
+body
+{
+    background-color: rgb(240, 185, 206);
+    margin: 0px;
+    width: 100%;
+}
+header        
+{
+    width: 100%;
+    background: rgb(253, 214, 244);
+    border: 2px;
+    position: relative;
+}
+nav
+{
+    width:100%;
+    display: flex;
+    justify-content:space-around;
+    gap: 450px;
+    text-decoration: none;
+    align-items: center;
+}
+/*animatioo de la prmiere photo#&*/
+.ronde 
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgb(107, 79, 90);
+    animation:pulse 1.3s infinite;
+}
+@keyframes pulse 
+{
+    to{  box-shadow: 0 0 0 18px rgba(240, 185, 206, 0.67);}
+}
+/*taille de tous les images:*/
+.rondeur
+{
+    width: 75px;
+    height: 75px;
+    border-radius: 10%;
+}
+.fermer
+{
+    width: 100px;
+    height: 10px;
+    color: red;
+    position: absolute;
+    margin-left: 87%;
+    padding: 1%;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+/* il faut  que jajoute des elemnents pour que sa fonction*/
+}
+.icon
+{
+    font-size: 15px;
+    filter: invert(21%) sepia(86%) saturate(7449%) hue-rotate(357deg) brightness(96%) contrast(87%);
+}
+
+/*mise en forme des textes */
+h1
+{
+    font-size: 3em;
+}
+.rien
+{
+    color: rgb(30, 136, 53); 
+    font-size: 1em;
+}
+h3,h4,h5,h6
+{
+    color: rgb(30, 136, 53); 
+    font-size: small;
+}
+.imager
+{
+    display: grid;
+    grid-template: repeat(2,100px)/repeat(4,100px);
+    justify-content: space-around;
+}
+/*mise en forme des elments header */  
+.maison
+{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.lien
+{
+    text-decoration: none;
+    color:  rgb(30, 179, 63);  ;
+}
+.button1
+{
+    width: 100px;
+    height: 30px;
+    padding: 1%;
+    color: rgb(30, 179, 63); 
+    border: solid 2px rgba(0, 0, 0, 0.137);
+    background-color: azure;
+    text-align: center;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.button2
+{
+    width: 150px;
+    height: 30px;
+    padding: 1%;
+    color: rgb(30, 179, 63); 
+    border: solid 2px rgba(0, 0, 0, 0.137);
+    background-color: azure;
+    text-align: center;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ionic
+{
+    filter: invert(47%) sepia(72%) saturate(508%) hue-rotate(81deg) brightness(100%) contrast(95%);
+}
+/*mise en forme des elements du corp*/
+.corp
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 3%;
+    padding: 3%;
+    width: auto;
+    height: auto;
+    /*element de la des medias query */
+}
+@media screen and (max-width:1024px){
+     .corp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 31px;
+    margin: 3%;
+    padding: 3%;
+    width: auto;
+    height: auto;
+    align-items: stretch;
+        }
+        nav {
+            width: 100%;
+            display: flex;
+            gap: 168px;
+            text-decoration: none;
+            align-items: center;
+            justify-content: space-around;
+        }
+    
+}
+
+/*meilleur facon de ranger les elemets coller sur flex box*/
+.conteneur
+{
+    display: flex; 
+    flex-wrap: wrap;
+    width: 950px;
+    object-fit: cover;
+}
+.conteneur > * 
+{
+    flex: 1 2 33%;
+}
+.button
+{
+    border: 1px solid  rgba(0, 0, 0, 0.137); 
+    background-color: rgb(240, 185, 206);
+    text-decoration: none;
+    color:black;
+    height: auto;
+    width: 80px;
+}
+/*mise en forme des elements du conteneur*/
+.element0
+{
+    background-color: azure;
+    border: 1px solid  rgba(0, 0, 0, 0.137);
+    width: auto;
+
+   /*%#{};quand on aligne les alements sa reagi autrement */
+}
+.element1
+{
+    background-color: azure;
+    border: 1px solid  rgba(0, 0, 0, 0.137);
+    width: 200px;
+   
+}
+.element2
+{
+    background-color: azure;
+    border: 1px solid  rgba(0, 0, 0, 0.137);
+    width: 350px;
+}
+.element3
+{
+    background-color: azure;
+    border: 1px solid  rgba(0, 0, 0, 0.137);
+    width: 200px;
+    
+}
+.element4
+{
+    background-color: azure;
+    border: 1px solid  rgba(0, 0, 0, 0.137);
+}
+.lesdeux
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 366px;
+}
+.zoomplus
+{
+    filter: invert(61%) sepia(44%) saturate(1920%) hue-rotate(299deg) brightness(100%) contrast(89%);
+}
+/*appliquer la css grid a ce niveau apres le repas de 13h*/
+.lesformules
+{
+    display: grid;
+    grid-template: repeat(2,38px)/repeat(3,55px);
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+/*mise en fornre des elements de calandar#*/
+#calandar  /*#%{}*/
+{
+    background-color: rgb(253, 214, 244); 
+    width: 300px;
+    height: 539px;
+    object-fit: cover
+}
+.theme
+{
+    background-color: azure;
+}
+.theme2
+{
+    background-color: rgb(240, 185, 206);
+    color: rgb(30, 136, 53);
+    text-align: center;
+    margin: 5%;
+    padding: 5%;
+}
+.theme1
+{
+    margin: auto;
+    padding: auto;
+    font-size: small;
+}
+.other
+{
+    color:  rgb(30, 136, 53);
+}
+.session1
+{
+    background-color: azure;
+    display: flex;
+    justify-content: space-around;
+    border: 1px rgba(0, 0, 0, 0.137) solid;
+}
+.cote
+{
+    text-decoration: none;
+    color:rgb(30, 136, 53); 
+}
+.session2
+{
+    background-color: azure;
+    display: flex;
+    justify-content: space-around;
+    border: 1px rgba(0, 0, 0, 0.137) solid;
+}
+.case
+{
+    color: rgb(30, 136, 53);
+    text-align: center;
+}
+.calandier
+{
+    background-color: azure;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    margin: 5%;
+    height: auto;
+}
+table
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 240px;
+    align-items: center;
+}
+td
+{
+    width: 30%;
+    height: 30%;
+}
+.h8
+{
+   text-align: center;
+   padding: 5%;
+   color:rgb(30, 136, 53); 
+   border: 1px solid rgba(0, 0, 0, 0.137);
+}
+.days
+{
+    color: rgb(30, 136, 53);
+}
+.date
+{
+    margin: 5%;
+    color: rgb(30, 136, 53);
+}
+/*effets danimation au niveau des jours du calandrier*/ 
+/*bordure des jours en couleur */
+.days1:hover
+{
+    border-radius: 50%;
+    background-color: rgb(240, 185, 206);;
+}
+/* aniamtion au survole de la souri #&*/
+/*element de lien rapide*/
+.lien-rapide
+{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 25;
+    align-items: center;
+    width:100%;
+    bottom: 2%;
+}
+.alignement
+{
+    border: #03dafb solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 525px;
+    height: 80px;
+}
+.contrastes
+{
+    z-index: 24;
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+    align-items: center;
+    width: 500px;
+    height: 62px;
+    background: #484848;
+    border-radius: 10px;
+}
+.lestrois-boutton a 
+{
+    text-decoration: none;
+    color: white;
+}
+.lestrois-boutton
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 330px;
+    height: 50px;
+    cursor: pointer;
+    background: #19b3fb;
+    border-radius: 10px;
+}
+.lien-rapide .contrastes .haut-page img
+{
+    width: 25px;
+    height: 25px;
+    transform:rotate(90deg);
+}
+.haut-page
+{
+    background: #36b9f7;
+    height: 38px;
+    width: 50px;
+    border:white solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.start-lien
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 25;
+    color: white;
+    height: 38px;
+    width: 100px;
+    font-size: 0.7em;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+    border: #c1f9ff solid 1px;
+    border-radius: 10px;
+}
+/* fin des elements de lien rapide*/

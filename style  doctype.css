@@ -1,0 +1,315 @@
+body
+{
+    background-color: aliceblue;
+    margin: 2%;
+    padding: 2%;
+}
+.elements1
+{
+    display: flex;
+    justify-content: space-between;
+    height: 200tpx;
+}
+.mbomez
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+}
+.compte
+{
+    width: 35px;
+    height: 35px; 
+    border-radius: 50%; 
+    text-align: center;
+    background-color: rgb(4, 255, 0);
+    color: white;
+    box-shadow: #2d9029 2px 2px 2px ;
+}
+.as1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    color: blue;
+    font-weight: bold;
+    box-shadow: #37b7cb 5px 5px 8px;
+
+}
+.as2
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: rgb(255, 0, 0);
+}
+.as3
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: rgb(225, 255, 0);
+    font-weight: bold;
+    box-shadow: #bfcb37 5px 5px 8px;
+}
+.as4
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: blue;
+}
+.as5
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: rgb(0, 255, 8);
+    text-shadow: #bfcb37 5px 5px 5px;
+}
+.as6
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    box-shadow: #bfcb37 5px 5px 8px;
+}
+p
+{
+    font-size: 3ex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button
+{
+    width: 18%;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    border-radius: 30px;
+}
+.temperature
+{
+    width: 65px;
+    height: 20px;
+    border: 1px black solid;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: #666666 6px 6px 10px;
+}
+/*elements se toruvant a la barre de recherche */
+form
+{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+}
+.micro1
+{
+    width: auto;
+    height: 67px;
+    background-color: white;
+    box-shadow: #666666  2px 2px 8px;
+    transition: 1s;
+}
+.photo
+{
+    width: auto;
+    height: 67px;
+    background-color: white;
+    border-start-end-radius: 30px;
+    border-end-end-radius: 30px;
+    box-shadow: #666666  2px 2px 8px;
+}
+.loupe
+{
+    width: auto;
+    height: 67px;
+    background-color: white;
+    border-end-start-radius: 30px;
+    border-start-start-radius: 30px;
+    box-shadow: #666666  2px 2px 8px;
+}
+
+.moteur
+{
+    width: 30%;
+    height: 65px;
+    border: none;
+    border-color: none;
+    text-align: center;
+    border-top-left-radius: 30px / 0px;
+    box-shadow: #666666  2px 2px 8px;
+    transition: 1s;
+}
+.contenaire
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer
+{
+    display: flex;
+    justify-content:space-between;
+    height: 100px;
+    align-items: flex-end;
+} 
+/*Quelque animation sur hover */
+.moteur:hover
+{
+    width: 60%;
+    height: 65px;
+    border: none;
+    border-color: none;
+    text-align: center;
+    font-size: 1em;
+    border-top-left-radius: 30px / 0px;
+    box-shadow:   20px #666666;
+}
+.micro1:hover
+{
+    width: auto;
+    height: 90px;
+    background-color: rgb(19, 12, 114);
+    box-shadow: #666666  2px 2px 8px;
+}
+.photo:hover
+{
+    width: auto;
+    height: 90px;
+    background-color: white;
+    border-start-end-radius: 30px;
+    border-end-end-radius: 30px;
+    box-shadow: #666666  2px 2px 8px;
+    transition: 1s ;
+}
+.as1:hover
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    color: rgb(255, 0, 217);
+    font-weight: bold;
+    box-shadow: #37b7cb 5px 5px 8px;
+    transform: rotateZ(90deg);
+    transition: 2s;
+
+}
+.as2:hover
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    color: rgb(255, 166, 0);
+    transform: rotateZ(90deg);
+    transition: 2s;
+}
+.as3
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: rgb(225, 255, 0);
+    font-weight: bold;
+    box-shadow: #bfcb37 5px 5px 8px;
+}
+.as4
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: blue;
+}
+.as5
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: rgb(0, 255, 8);
+    text-shadow: #bfcb37 5px 5px 5px;
+}
+.as6
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    box-shadow: #bfcb37 5px 5px 8px;
+}
+/*je dois faire une aniamtion sur tous les elements de la recherche*/
+/*element de lien rapide*/
+.lien-rapide
+{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 25;
+    align-items: center;
+    width:90%;
+    bottom: 2%;
+}
+.alignement
+{
+    border: #03dafb solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 525px;
+    height: 80px;
+}
+.contrastes
+{
+    z-index: 24;
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+    align-items: center;
+    width: 500px;
+    height: 62px;
+    background: #484848;
+    border-radius: 10px;
+}
+.lestrois-boutton
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 330px;
+    height: 50px;
+    cursor: pointer;
+    background: #19b3fb;
+    border-radius: 10px;
+}
+.lestrois-boutton a 
+{
+    text-decoration: none;
+    color: white;
+}
+.lien-rapide .contrastes .haut-page img
+{
+    width: 25px;
+    height: 25px;
+    transform:rotate(90deg);
+}
+.haut-page
+{
+    background: #36b9f7;
+    height: 38px;
+    width: 50px;
+    border:white solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.start-lien
+{
+    text-decoration: none;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 25;
+    color: white;
+    height: 38px;
+    width: 100px;
+    font-size: 0.7em;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+    border: #c1f9ff solid 1px;
+    border-radius: 10px;
+}
+/* fin des elements de lien rapide*/

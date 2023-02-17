@@ -1,0 +1,418 @@
+*
+{
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.section-background
+{
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    flex-wrap: wrap;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+}
+.section-background span
+{
+    border: rgba(35, 255, 1, 0.068) solid 1px;
+    position: relative;
+    width: calc(2.25vw - 2px);
+    height:calc(2.25vw - 2px);
+    display: block;
+}
+body
+{
+    display: grid;
+    gap: 30px;
+    color: white;
+    background: rgb(23, 25, 23);
+    margin: 35px;
+    padding: 10px;
+    position: relative;
+}
+header
+{
+    width: 90%;
+}
+.access
+{
+    margin-left: 35px;
+    width: 94.3%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-access:nth-child(1)
+{
+    font-size: 2em;
+}
+.text-access:nth-child(2)
+{
+    box-shadow: rgba(7, 7, 7, 0.479) 6px 10px 15px;
+    background: rgba(0, 100, 0, 0.2);
+    color: beige;
+    border:  rgba(156, 234, 156, 0.452) solid 1px;
+    border-radius: 0px 20px 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100vh;
+}
+.text-access:nth-child(2) p span
+{
+    color: #0f0;
+}
+/* element de la section deployer*/
+.deployer
+{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+   
+}
+.case-deployer
+{
+    border: rgb(156, 234, 156)  solid 1px;
+    border-radius: 0px 25px 0px 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    width: 100vh;
+    gap:10px;
+    background: linear-gradient(to left, black 40%, rgb(34, 18, 33));
+}
+.case-deployer:hover
+{
+    border: #0f0 solid 1px;
+}
+.les-dollars:nth-child(1)
+{
+    display: grid;
+    justify-content: start;
+    gap: 10px;
+    width: 40vh;
+}
+.les-dollars:nth-child(1) span
+{
+    color: rgb(86, 83, 83);
+}
+.les-dollars:nth-child(2)
+{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 40vh;
+    border-left:1px solid green ;
+}
+.les-dollars:nth-child(2) span
+{
+    color: rgb(86, 83, 83);
+}
+.TOTAL
+{
+    display: grid;
+    gap: 3px;
+    height: 30vh;
+    width: 50vh;
+     background: linear-gradient(to right, black 40%, rgb(34, 18, 33));
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: rgb(156, 234, 156) solid 1px;
+    border-radius: 0px 25px 0px 25px;
+}
+.TOTAL:hover
+{
+    border: #0f0 solid 1px;
+}
+.TOTAL span
+{
+    font-size: 0.9em;
+    color: rgb(86, 83, 83);
+    
+}
+/*fin des elements de la section deployer*/
+.corps
+{
+    width: 90%;
+}
+.Deploy
+{
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+    width: 90%;
+}
+.section-deploy 
+{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.section-deploy span
+{
+    color: lime;
+}
+.section-deploy button
+{
+    width: 150px;
+}
+.text-deploy
+{
+    width: 90%;
+    color: rgb(179, 180, 180);
+}
+.Deploy-nesting-bird
+{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 300px;
+      font-size: 1.2em;
+    color: rgb(86, 83, 83);
+    cursor: pointer;
+}
+.span-deploy:hover
+{
+    border-bottom: solid 3px greenyellow;
+}
+button
+{
+    color: greenyellow;
+    border: green solid 1px;
+    background: none;
+    height: 25px;
+    border-radius: 0px 10px 0px 10px;
+    cursor: pointer;
+}
+
+button:focus
+{
+    
+    color: rgb(109, 220, 163);
+    border: #0f0 solid 2px;
+}
+.image-section
+{
+    width: 53%;
+    margin-left: 27px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.image-section .image-section-div
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 180px;
+    height: 80px;
+    border-radius: 0px 10px 0px 10px;
+    border: rgba(91, 92, 91, 0.505) dotted 2px;
+}
+.image-section .image-section-div:hover
+{
+    border: rgba(0, 255, 0, 0.505) dotted 2px;
+    cursor: pointer;
+    background: rgba(0, 255, 0, 0.048);
+}
+.image-section .image-section-div div
+{
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+}
+.image-section .image-section-div div :nth-child(2)
+{
+    color: rgb(86, 83, 83);
+    font-size: 0.9em;
+}
+.image-section img
+{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: #0f0 solid 2px;
+}
+
+.compte
+{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.les-NFT:nth-child(1)
+{
+    background-image: url('image NFT/des as 1.png');
+  background-size: contain;
+    background-repeat: no-repeat;
+     height: 50vh;
+     width: 40vh;
+     border-radius: 0px 20px 0px 0px;
+}
+.les-NFT:nth-child(2)
+{
+    background-image: url('image NFT/des as 2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+     height: 50vh;
+     width: 40vh;
+     border-radius: 0px 20px 0px 0px;
+}
+
+/* elements Concernant uniquement le nth(3)*/
+.les-NFT:nth-child(3)
+{
+    background-image: url('image NFT/m6.png');
+      background-size: contain;
+    background-repeat: no-repeat;
+     height: 50vh;
+     width: 40vh;
+     border-radius: 0px 20px 0px 0px;
+}
+/* elements Concernant uniquement le nth(4)*/
+.les-NFT:nth-child(4)
+{
+    background-image: url('image NFT/MB.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+     height: 50vh;
+     width: 40vh;
+     border-radius: 0px 20px 0px 0px;
+}
+.span-NFT
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 18vh;
+    bottom: -10px;
+    position: relative;
+}
+.span-NFT span
+{
+    color:rgb(0, 255, 0);
+    background: rgba(0, 100, 0, 0.3);
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+.After-span
+{
+    background: black;
+    position: absolute;
+    width: 35vh;
+    height: 12vh;
+    bottom: 50px;
+    font-size: 0.9em;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 0px 0px 0px 20px;
+}
+.After-spanclasst
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    color: rgb(86, 83, 83);
+    font-size: 0.9em;
+}
+.boutton
+{
+    width: 30vh;
+    height: 5vh;
+}
+/*element de lien rapide*/
+.lien-rapide
+{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 25;
+    align-items: center;
+    width:90%;
+    bottom: 2%;
+}
+.alignement
+{
+    border: #03dafb solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 525px;
+    height: 80px;
+}
+.contrastes
+{
+    z-index: 24;
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+    align-items: center;
+    width: 500px;
+    height: 62px;
+    background: #484848;
+    border-radius: 10px;
+}
+.lestrois-boutton
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 330px;
+    height: 50px;
+    cursor: pointer;
+    background: #19b3fb;
+    border-radius: 10px;
+}
+.lien-rapide .contrastes .haut-page img
+{
+    width: 25px;
+    height: 25px;
+    transform:rotate(90deg);
+}
+.haut-page
+{
+    background: #36b9f7;
+    height: 38px;
+    width: 50px;
+    border:white solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.start-lien
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 25;
+    color: white;
+    height: 38px;
+    width: 100px;
+    font-size: 0.7em;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+    border: #c1f9ff solid 1px;
+    border-radius: 10px;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+/* fin des elements de lien rapide*/
